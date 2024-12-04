@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td,th {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body style="background-color: lightgrey">
+    <table
+      style="
+        border-style: solid;
+        border-collapse: collapse;
+        background-color: white;
+      ">
+      <caption style="margin-bottom: 2rem">
+        Table Jumlah Karyawan On Site shift siang dan malam
+      </caption>
+      <!--tr>th*2  -->
+      <!--tr>th*2  -->
+      <!--tr>th*2  -->
+      <!--tr>th*2  -->
+      <!--(tr>th*2)+(tr>th*2)+(tr>th*2)+(tr>th*2)  -->
+      <tr>
+        <th style="border-style: solid">shift</th>
+        <th style="border-style: solid">Jumlah</th>
+      </tr>
+      <tr>
+        <th style="border-style: solid">Pagi</th>
+        <th style="border-style: solid">25</th>
+      </tr>
+      <tr>
+        <th style="border-style: solid">sore</th>
+        <th style="border-style: solid">15</th>
+      </tr>
+      <tr>
+        <th style="border-style: solid">Total</th>
+        <th style="border-style: solid">35</th>
+      </tr>
+    </table>
+
+    <table border="1" style="
+        border-style: solid;
+        border-collapse: collapse;
+        background-color: white;
+      ">
+      <caption style="margin-bottom: 1rem; margin-top: 3rem">
+        Tabel Karyawan
+      </caption>
+      <!-- (thead>tr>th*5)+(tbody>(tr>td*5)+(tr>td*5)+(tr>td*5)) -->
+      <thead>
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Nama</th>
+          <th scope="col">Posisi</th>
+          <th scope="col">Departemen</th>
+          <th scope="col">Gaji</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr>
+          <td scope="row">1</td>
+          <td>Andi</td>
+          <td>Manager</td>
+          <td>Pemasaran</td>
+          <td>Rp10.000.000</td>
+        </tr>
+        <tr>
+          <td scope="row">2</td>
+          <td>Maria</td>
+          <td>Staff</td>
+          <td>Keuangan</td>
+          <td>Rp5.000.000</td>
+        </tr>
+        <tr>
+          <td scope="row">3</td>
+          <td>Rudi</td>
+          <td>Supervisor</td>
+          <td>Operasional</td>
+          <td>Rp7.500.000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table style="
+        border-style: solid;
+        border-collapse: collapse;
+        background-color: white;
+      ">
+      <caption style="margin-top: 2rem; margin-bottom: 1rem; font-weight: bold;">
+        Table Jumlah Karya Seluruh Departemen
+      </caption>
+
+      <colgroup>
+        <col style="border: 2px solid rgb(20, 0, 75); background-color: lightgrey" />
+        <col style="border: 2px solid  rgb(20, 0, 75);"/>
+        <col  />
+        <col style="border: 2px solid  rgb(20, 0, 75); background-color: lightgrey" />
+      </colgroup>
+      <!-- thead>(tr>(th*3))+(tr>(th*2)) -->
+      <thead style="background-color:  rgb(20, 0, 75); color: white">
+        <tr>
+          <th rowspan="2" scope="colgroup">Departemen</th>
+          <th colspan="2" scope="colgroup">shift</th>
+          <th rowspan="2" scope="col">Jumlah</
+        </tr>
+        <tr>
+          <th scope="col">Siang</th>
+          <th scope="col">Malam</th>
+        </tr>
+      </thead>
+      <!-- tbody>(tr>th+td*3)+(tr>th+td*3)+(tr>th+td*3) -->
+      <tbody>
+        <tr>
+          <th scope="row">IT</th>
+          <td>10</td>
+          <td>5</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <th scope="row">Pemasaran</th>
+          <td>15</td>
+          <td>8</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <th scope="row">Keuangan</th>
+          <td>8</td>
+          <td>4</td>
+          <td>12</td>
+        </tr>
+      </tbody>
+      <!-- tfoot>tr>th+td*3 -->
+      <tfoot style="background-color: grey; color: white">
+        <tr>
+          <th scope="row">Jumlah</th>
+          <td>33</td>
+          <td>17</td>
+          <td>50</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
