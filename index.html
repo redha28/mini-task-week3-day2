@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      td,th {
+      td,
+      th {
         border: 2px solid black;
       }
     </style>
@@ -43,7 +44,9 @@
       </tr>
     </table>
 
-    <table border="1" style="
+    <table
+      border="1"
+      style="
         border-style: solid;
         border-collapse: collapse;
         background-color: white;
@@ -61,7 +64,7 @@
           <th scope="col">Gaji</th>
         </tr>
       </thead>
-      <tbody >
+      <tbody>
         <tr>
           <td scope="row">1</td>
           <td>Andi</td>
@@ -86,31 +89,50 @@
       </tbody>
     </table>
 
-    <table style="
+    <table
+      style="
         border-style: solid;
         border-collapse: collapse;
         background-color: white;
         width: 50%;
       ">
-      <caption style="margin-top: 2rem; margin-bottom: 1rem; font-weight: bold;">
+      <caption style="margin-top: 2rem; margin-bottom: 1rem; font-weight: bold">
         Table Jumlah Karyawan Seluruh Departemen
       </caption>
 
       <colgroup>
-        <col style="border: 2px solid rgb(20, 0, 75); background-color: lightgrey" />
-        <col style="border: 2px solid  rgb(20, 0, 75);"/>
-        <col  />
-        <col style="border: 2px solid  rgb(20, 0, 75); background-color: lightgrey" />
+        <col
+          style="
+            border: 2px solid rgb(20, 0, 75);
+            background-color: lightgrey;
+          " />
+        <col style="border: 2px solid rgb(20, 0, 75)" />
+        <col />
+        <col
+          style="
+            border: 2px solid rgb(20, 0, 75);
+            background-color: lightgrey;
+          " />
       </colgroup>
       <!-- thead>(tr>(th*3))+(tr>(th*2)) -->
-      <thead style="background-color:  rgb(20, 0, 75); color: white">
+      <thead style="background-color: rgb(20, 0, 75); color: white">
         <tr>
-          <th rowspan="2" scope="colgroup" style="border-right: 2px solid #ffffff;">Departemen</th>
-          <th colspan="2" scope="colgroup" style="border: 2px solid #ffffff;">shift</th>
-          <th rowspan="2" scope="col" style="border-left: 2px solid #ffffff;">Jumlah</
+          <th
+            rowspan="2"
+            scope="colgroup"
+            style="border-right: 2px solid #ffffff">
+            Departemen
+          </th>
+          <th colspan="2" scope="colgroup" style="border: 2px solid #ffffff">
+            shift
+          </th>
+          <th rowspan="2" scope="col" style="border-left: 2px solid #ffffff">
+            Jumlah
+          </th>
         </tr>
+
         <tr>
-          <th scope="col" style="border: 2px solid #ffffff;">Siang</th>
+          <th scope="col" style="border: 2px solid #ffffff">Siang</th>
           <th scope="col">Malam</th>
         </tr>
       </thead>
